@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment</title>
+    <script src="node_modules/utils/dist/utils.js"></script>
+    <script src="node_modules/uv-custom/dist/Utils.js"></script>
+    <script src="src/AfterUrl.js"></script>
+</head>
+<body>
+    <h1>A mixin experiment</h1>
+    <button id="addBildId">Lägg till bildId</button>
+    <button id="addHash">Lägg till hash</button>
+    <button id="setHash">Anropa setHash</button>
+    <button id="afterUrl">Anropa AfterUrl</button>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+
+        $(function() {
+            $.extend(Utils.Urls, Riksarkivet.Utils.AfterUrl);
+            Utils.Urls.loggaTillConsole('loggaTillConsole funkar!!!');
+
+            $('#addBildId').on('click', function() {
+                window.history.replaceState(null,null,window.document.location.origin + '/C0000268_00001?beta=true')
+            })
+
+            $('#addHash').on('click', function() {
+                window.document.location.replace('#?abc=123&c=hola')
+            })
+
+            $('#setHash').on('click', function() {
+                Utils.Urls.setHashParameter('abc','newValue')
+            })
+
+            $('#afterUrl').on('click', function() {
+                Utils.Urls.SetUrlAfter('/','C0000268_00002')
+            })
+
+        });
+
+    </script>
+
+</body>
+</html>

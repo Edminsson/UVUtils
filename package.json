@@ -1,0 +1,25 @@
+{
+  "name": "uvutils",
+  "version": "1.0.0",
+  "description": "Trying a new approach to mixin our code with the standard UniversalViewer code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edminsson/UVUtils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edminsson/UVUtils/issues"
+  },
+  "homepage": "https://github.com/Edminsson/UVUtils#readme",
+
+  "devDependencies": {
+    "utils": "git://github.com/edsilv/utils.git",
+    "uv-custom": "git://github.com/Riksarkivet/uv-custom.git"
+  }
+
+}

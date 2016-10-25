@@ -1,0 +1,20 @@
+{
+  "name": "uvutils",
+  "description": "Trying a new approach to mixin our code with the standard UniversalViewer code.",
+  "main": "index.js",
+  "authors": [
+    "Edminsson <axel.aguilar@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Edminsson/UVUtils",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
